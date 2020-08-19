@@ -1,0 +1,303 @@
+\documentclass{article} % use \documentstyle for old LaTeX compilers
+
+\usepackage[english]{babel} % 'french', 'german', 'spanish', 'danish', etc.
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{mathdots}
+\usepackage[classicReIm]{kpfonts}
+\usepackage{graphicx}
+
+
+
+\documentclass[onecolumn]{article}
+%\usepackage{url}
+%\usepackage{algorithmic}
+\usepackage[a4paper]{geometry}
+\usepackage{datetime}
+\usepackage[margin=2em, font=small,labelfont=it]{caption}
+\usepackage{graphicx}
+\usepackage{mathpazo} % use palatino
+\usepackage[scaled]{helvet} % helvetica
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{subfigure}
+% Letterspacing macros
+\newcommand{\spacecaps}[1]{\textls[200]{\MakeUppercase{#1}}}
+\newcommand{\spacesc}[1]{\textls[50]{\textsc{\MakeLowercase{#1}}}}
+
+\title{\spacecaps{Assignment 4 as Final}\\ \normalsize \spacesc{CENG3544, Computer and Network Security} }
+
+\author{Hasibullah Mahmood\\hasibullahmahmood@posta.mu.edu.tr}
+%\date{Monday 8th June, 2020}
+\date{\ Monday 8th June, 2020}
+
+\begin{document}
+\maketitle
+%\selectlanguage{english} % remove comment delimiter ('%') and select language if required
+
+\section{ Write your thoughts about Malware (Antivirus etc.) tools (write in max 100 words) (10 pts.)}
+
+\noindent Here I would like to write briefly about anti-virus, anti-malware and their advantages and disadvantages.
+
+\noindent The Anti-virus software is used to detect, quarantine and remove viruses from the system. Anti-virus usually deals with older and identified threats like Trojans, viruses and worms. On the other hand, anti-malware usually deals with new threats or delivered by zero-day exploits.
+
+
+\subsection{Advantages:}
+
+\begin{enumerate}
+\item  Virus protection
+
+\item  Spyware protection
+
+\item  Web protection
+
+\item  Spam protection
+
+\item  Firewall feature
+\end{enumerate}
+
+
+\subsection{Disadvantages}
+
+\begin{enumerate}
+\item  System slowdown
+
+\item  No complete protection
+
+\item  Untrustworthy
+\end{enumerate}
+
+\noindent Today both premium and free anti-viruses are available in markets. For premium antiviruses, you need to pay monthly or yearly. However, for free antiviruses as the name suggests there is no fee but advertisement. 
+
+
+\section{  Why is Linux preferred in SOC as SIEM? (Write in max 100 words) (10 pts.)}
+
+\noindent Linux operating system is very flexible and we can configure it based on our needs. We can install just the required programs and uninstall extra unnecessary programs, so the operating system will run fast and smooth. 
+
+\noindent Another feature of Linux OS is the existence of ready tools for Security information and event management (SIEM). Some of them are listed as follows:
+
+\begin{enumerate}
+\item  Network packet capture software like Wire-shark
+
+\item  Malware analysis tools
+
+\item  Intrusion detection systems (IDSs)
+
+\item  Firewalls
+
+\item  Log managers
+
+\item  And ticketing systems
+\end{enumerate}
+
+\noindent These great features made Linux the best candidate as an operating system for the security operation center (SOC).
+
+
+\section{ Write and enhance your Linux script in the Midterm Assignment so that it (60 pts.) }
+
+\begin{enumerate}
+\item \begin{enumerate}
+\item  Gives a summary report of the system to file(s) 
+
+\item  Periodically runs 
+
+\item  Keeps the current status of the system in USB (or cloud?) (BONUS) 
+
+\item  Uses hashing 
+
+\item  Encrypts the current status (file(s))with your key)
+\end{enumerate}
+\end{enumerate}
+
+\noindent A script is written and attached.\newline
+Comments are provided for almost all the lines of codes.\newline\newline\newline\newline\newline\newline\newline\newline
+\noindent 
+
+
+\section{ Document your script and your findings in your report (20 pts.) }
+
+\noindent Screenshots and detailed explanation of the written code should be included.\newline
+
+\noindent 
+   
+      
+      
+
+
+\noindent \textbf{Screenshots and detailed explanation:}
+
+As shown below in SCREENSHOT 1, the script is run. It first gets the username and prints some options to choose from. The user can enter one of 6 numbers based on his/her need and the script will continue to execute.
+
+\noindent Also, looking to SCREENSHOT 1, we can see there are two file explorer opened. On the left-hand side, the script is located in the local disk. On the right-hand side, there is a USB named UUI.
+
+\noindent \includegraphics*[width=6in, height=3.76in, keepaspectratio=true]{1.png}
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline\newline \newline\newline\newline\newline  In the beginning, as a user, I didn't have a key so I entered 1 to create it. Then the key is generated in the local disk.\newline
+
+\noindent Note: The key is not generated, unless the user enters 1. If the user already has a key, he/she can skip the first option and continue with the rest of the options.\newline
+
+\noindent Also, after the key is created, the user can store the key in any safe place.\newline   
+\includegraphics*[width=6in, height=3.70in, keepaspectratio=false]{2.png}
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline\newline \newline\newline\newline\newline In the 3${}^{rd}$ screenshot, option 2 is selected. The script asks for the key to be entered manually. The user is free to type it or just copy past it. As we can see, three new files are generated in the local disk, two of them encrypted and the third file is their hash after encryption.\newline
+
+\noindent Note that, first I have encrypted the files and then compute their hashes because the hash is one way and the original file can't be generated by it.\newline
+
+\noindent Also, the user is free to keep the hash file in any safe place.
+
+\noindent \includegraphics*[width=6in, height=3.73in, keepaspectratio=false]{3.png}
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline\newline \newline\newline\newline The 4${}^{th}$ screenshot shows that the user has selected option 3. Then, the user is asked to enter the USB name and key.\newline
+
+\noindent The script will check whether the given USB exists or not. If the USB doesn't exist, it will print a message as ``USB not found''. Else the key will be asked and the system status files will be generated.
+
+\noindent \includegraphics*[width=6in, height=3.73in, keepaspectratio=false]{4.png}
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline\newline \newline\newline\newline\newline\newline If the user enters 4 to create a system summary, the user will be asked to manually enter or copy past hashes. Here, the script will check whether system status files exist or not. If the files are not found, a message like ``The system files not found'' error will be printed. Else, the user again will be asked to enter the key and finally, the system summary will be generated. 
+
+\noindent \includegraphics*[width=6in, height=3.70in, keepaspectratio=false]{5.png}
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent 
+
+\noindent \newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline\newline \newline\newline\newline\newline\newline\newline\newline Furthermore, if the user enters 5, the user will be asked to enter hashes and key and as a result, the system summary will be prepared, encrypted and appended to the file.
+
+\noindent \includegraphics*[width=6in, height=3.73in, keepaspectratio=false]{6.png}
+
+\noindent 
+
+\noindent \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline \newline\newline\newline\newline \newline\newline\newline\newline\newline\newline\newline\newline Finally, if the user enter 6, the script will prompt for key and as a result, the decrypted system summary as a plaintext will be generated.
+
+\noindent \includegraphics*[width=6in, height=3.70in, keepaspectratio=false]{7.png}
+
+\noindent 
+
+
+\end{document}
+
